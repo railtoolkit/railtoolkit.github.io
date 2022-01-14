@@ -1,0 +1,11 @@
+<html>
+{{ partial "head" . }}
+<body>
+  {{ partial "top" . }}
+  {{ partial "nav" . }}
+  <div id="content">
+    {{.Content}}
+  </div>
+  {{ partial "bottom" . }}
+</body>
+</html>

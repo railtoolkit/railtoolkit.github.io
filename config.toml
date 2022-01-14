@@ -1,0 +1,3 @@
+baseURL = 'https://railtoolkit.github.io'
+languageCode = 'en-us'
+title = 'RailToolKit'
