@@ -1,0 +1,40 @@
+# Generated files -- hugo
+public/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository -- hugo
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building -- hugo
+.hugo_build.lock
+
+# General -- Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r  -- Mac OS X
+Icon
+
+# Thumbnails -- Mac OS X
+._*
+
+# Files that might appear in the root of a volume -- Mac OS X
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share -- Mac OS X
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
