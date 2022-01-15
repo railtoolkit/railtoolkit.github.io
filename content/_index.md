@@ -1,3 +1,8 @@
+---
+title: About
+date: 2022-01-01
+---
+
 # About
 
 RailToolKit develops ideas and tools for research and teaching in the field of railway engineering.
@@ -19,5 +24,3 @@ This software is soon to be a Julia package.
 ## edugame-railway-operation
 
 This education game is a physical model made from either paper craft or a wooden railway. It comes with tasks to illustrate block division, routes, timetabling, and infrastructure planning for students to immerse themselves in the problems of rail-guided transport.
-
-# Imprint
