@@ -1,21 +1,21 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'NexaBold';
-    src: url('/css/font/NexaBold.woff2') format('woff2'),
-         url('/css/font/NexaBold.woff') format('woff'),
-    		 url('/css/font/NexaBold.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'NexaBold';
+  src: url('/css/font/NexaBold.woff2') format('woff2'),
+       url('/css/font/NexaBold.woff') format('woff'),
+  		 url('/css/font/NexaBold.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'NexaLight';
-    src: url('/css/font/NexaLight.woff2') format('woff2'),
-         url('/css/font/NexaLight.woff') format('woff'),
-    		 url('/css/font/NexaLight.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'NexaLight';
+  src: url('/css/font/NexaLight.woff2') format('woff2'),
+       url('/css/font/NexaLight.woff') format('woff'),
+  		 url('/css/font/NexaLight.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {

@@ -3,8 +3,13 @@
 <body>
   {{ partial "top" . }}
   <div id="content">
-  <hr />
-    {{.Content}}
+    <hr />
+    {{ range .Pages}}
+    <p>
+      <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
+      {{.Description}}
+    </p>
+    {{ end }}
   </div>
   {{ partial "bottom" . }}
 </body>
