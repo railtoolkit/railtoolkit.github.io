@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 {{ partial "head" . }}
 <body>
   {{ partial "top" . }}
   <div id="content">
-    <hr />
+    <hr>
     {{ range .Pages}}
     <p>
       <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
