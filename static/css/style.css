@@ -35,7 +35,7 @@ hr {
 }
 
 /*Header:*/
-#top {
+#top a {
     display: flex;
 }
 
