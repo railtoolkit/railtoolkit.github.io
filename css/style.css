@@ -35,30 +35,30 @@ hr {
 }
 
 /*Header:*/
-#top a {
+header a {
     display: flex;
 }
 
-#logo img {
+header img {
     margin: 10px;
 }
 
 /*Content:*/
-#content {
+main {
     margin-inline: 1rem;
     min-width: 16em; /* Mindestbreite (der Ueberschrift) verhindert Anzeigefehler in modernen Browsern */
 }
 
-#content p {
+main p {
     margin: 1em 5px 1em;
 }
 
-#content li {
+main li {
     margin-inline-start: 0.2em;
 }
 
-/* bottom:*/
-#bottom {
+/* footer:*/
+footer {
     font-size: 0.5em;
     text-align: right;
     margin: 1rem;
