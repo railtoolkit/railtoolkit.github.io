@@ -3,7 +3,7 @@
 {{ partial "head" . }}
 <body>
   {{ partial "top" . }}
-  <div id="content">
+  <main>
     <hr>
     {{ range .Pages}}
     <p>
@@ -11,7 +11,7 @@
       {{.Description}}
     </p>
     {{ end }}
-  </div>
+  </main>
   {{ partial "bottom" . }}
 </body>
 </html>
