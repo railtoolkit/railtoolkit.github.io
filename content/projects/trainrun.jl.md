@@ -1,7 +1,7 @@
 ---
-title: TrainRun.jl
-date: 2022-01-01
+title: "TrainRun.jl"
 description: "TODO!"
+repository: "https://github.com/railtoolkit/TrainRun.jl"
 ---
 
 # TrainRun.jl
