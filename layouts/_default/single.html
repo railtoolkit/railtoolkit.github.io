@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
 {{ partial "head" . }}
 <body>
   {{ partial "top" . }}
-  <div id="content">
+  <main>
     <hr>
-    {{.Content}}
-  </div>
+
+    {{- .Content -}}
+
+    <!-- {{ printf "%#v" $.Site }} -->
+
+  </main>
   {{ partial "bottom" . }}
 </body>
 </html>

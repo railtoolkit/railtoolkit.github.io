@@ -5,11 +5,9 @@
   {{ partial "top" . }}
   <main>
     <hr>
-    {{ range .Pages}}
-    <p>
+    {{ range .Pages }}
       <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
-      {{.Description}}
-    </p>
+      <p>{{ .Description }}</p>
     {{ end }}
   </main>
   {{ partial "bottom" . }}
