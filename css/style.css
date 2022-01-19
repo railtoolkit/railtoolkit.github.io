@@ -1,15 +1,6 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'NexaBold';
-    src: url('/css/font/NexaBold.woff2') format('woff2'),
-        url('/css/font/NexaBold.woff') format('woff'),
-        url('/css/font/NexaBold.otf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'NexaLight';
     src: url('/css/font/NexaLight.woff2') format('woff2'),
         url('/css/font/NexaLight.woff') format('woff'),
@@ -35,11 +26,7 @@ hr {
 }
 
 /*Header:*/
-header a {
-    display: flex;
-}
-
-header img {
+#logo {
     margin: 10px;
 }
 
@@ -87,4 +74,10 @@ a {
     text-decoration: none; /*Link nicht unterstreichen*/
     font-weight: bold;
     color: var(--dark-blue);
+}
+
+/* images */
+img {
+    max-width: 100%;
+    height: auto;
 }
