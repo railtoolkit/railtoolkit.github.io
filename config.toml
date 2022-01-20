@@ -1,3 +1,9 @@
 baseURL = 'https://railtoolkit.org'
-languageCode = 'en-us'
+languageCode = 'en'
 title = 'RailToolkit'
+
+[languages]
+
+  [languages.en]
+  languageName = "English"
+  weight = 1
