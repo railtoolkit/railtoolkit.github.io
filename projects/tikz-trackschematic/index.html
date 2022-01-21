@@ -1,9 +1,8 @@
 <!doctype html><html lang=en><head>
-<meta name=generator content="Hugo 0.92.0">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<link rel=alternate type=application/rss+xml href=/index.xml title=RailToolkit>
+<link rel=alternate type=application/rss+xml href title=RailToolkit>
 <link rel=stylesheet type=text/css href=/css/style.css>
 <link rel="shortcut icon" href=/css/favi.ico type=image/x-icon>
 <link rel=icon href=/css/favi.ico type=image/x-icon>
@@ -24,7 +23,7 @@
 <meta name=msapplication-TileColor content="#025A96">
 <meta name=msapplication-TileImage content="/css/favi.ico/ms-icon-144x144.png">
 <meta name=theme-color content="#025A96">
-<title>RailToolkit - About</title>
+<title>RailToolkit - tikz-trackschematic</title>
 </head>
 <body>
 <header>
@@ -36,8 +35,9 @@
 </header>
 <main>
 <hr>
-<p><h1 id=about>About</h1>
-<p>RailToolKit develops ideas and tools for research and teaching in the field of railway engineering.</p>
+<p><h1 id=tikz-trackschematic>tikz-trackschematic</h1>
+<p>{{ $resp := getJSON &ldquo;<a href=https://api.github.com/repos/railtoolkit/tikz-trackschematic/contents/readme%22>https://api.github.com/repos/railtoolkit/tikz-trackschematic/contents/readme"</a> }}</p>
+<p>{{ $resp.content | base64Decode | markdownify }}</p>
 </p>
 </main>
 <footer>
