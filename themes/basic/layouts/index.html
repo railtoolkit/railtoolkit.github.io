@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">{{ partial "head" . }}
+<body>
+  {{ partial "top" . }}
+  <main>
+    <hr>
+
+    <p>{{- .Content -}}</p>
+
+    <!-- {{ printf "%#v" $.Site }} -->
+
+  </main>
+  {{ partial "bottom" . }}
+</body>
+</html>

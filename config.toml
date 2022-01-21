@@ -1,6 +1,7 @@
 baseURL = 'https://railtoolkit.org'
 languageCode = 'en'
 title = 'RailToolkit'
+theme = 'basic'
 
 [languages]
 

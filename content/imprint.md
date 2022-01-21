@@ -2,7 +2,6 @@
 title: "Imprint"
 date: 2022-01-01
 lastmod: 2022-01-01
-notoc: true
 ---
 
 # Imprint
