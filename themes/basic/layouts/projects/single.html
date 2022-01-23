@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">{{ partial "head" . }}
+    <body>
+    {{ partial "top" . }}
+        <main>
+            <hr>
+
+            <p>{{- .Content -}}</p>
+
+            {{ with .Params.repository }}
+                <a href="{{ . }}" target="_blank">Git repository</a>
+            {{ end }}
+
+            <!--
+            {{ with .Params.github.readme }}
+                {{ $resp := getJSON (printf "https://api.github.com/repos/%s" .) }}
+                {{ $resp.content | base64Decode | markdownify }}
+            {{ end }}
+            -->
+        </main>
+    {{ partial "bottom" . }}
+    </body>
+</html>
