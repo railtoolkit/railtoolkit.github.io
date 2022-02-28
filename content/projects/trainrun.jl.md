@@ -1,7 +1,8 @@
 ---
 title: "TrainRun.jl"
 description: "TODO!"
-repository: "https://github.com/railtoolkit/TrainRun.jl"
+git:
+    repository: "https://github.com/railtoolkit/TrainRun.jl/"
 ---
 
 # TrainRun.jl

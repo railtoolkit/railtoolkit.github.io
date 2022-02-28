@@ -7,16 +7,25 @@
 
             <p>{{- .Content -}}</p>
 
-            {{ with .Params.repository }}
+            {{ with .Params.git.repository }}
                 <a href="{{ . }}" target="_blank">Git repository</a>
             {{ end }}
 
-            <!--
-            {{ with .Params.github.readme }}
-                {{ $resp := getJSON (printf "https://api.github.com/repos/%s" .) }}
-                {{ $resp.content | base64Decode | markdownify }}
+            {{ if and (.Params.git.repository) (.Params.git.aboutfile) }}
+                {{ $url := urls.Parse .Params.git.repository }}
+                {{ $apiUrl := "" }}
+
+                {{ if eq $url.Host "github.com" }}
+                    {{ $apiUrl = printf "https://api.github.com/repos%scontents/%s" $url.Path .Params.git.aboutfile }}
+                {{ else if eq $url.Host "repository.ivev.bau.tu-bs.de" }}
+                    {{ $apiUrl = printf "https://repository.ivev.bau.tu-bs.de/api/v1/repos%scontents/%s" $url.Path .Params.git.aboutfile }}
+                {{ end }}
+
+                {{ with $apiUrl }}
+                    {{ $resp := getJSON (.) }}
+                    {{ $resp.content | base64Decode | markdownify }}
+                {{ end }}
             {{ end }}
-            -->
         </main>
     {{ partial "bottom" . }}
     </body>
