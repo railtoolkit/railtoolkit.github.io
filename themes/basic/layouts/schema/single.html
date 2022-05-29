@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    <head>
+      <meta charset="UTF-8">
+        {{ with .Params.redirect }}
+            <meta http-equiv="Refresh" content="0; url='{{ . }}'" />
+        {{ end }}
+      <title>{{ .Site.Title }} - {{ .Title }}</title>
+    </head>
+    <body>
+    {{ partial "top" . }}
+        <main>
+            <hr>
+            <p>{{- .Content -}}</p>
+
+            {{ with .Params.redirect }}
+                <p>Please follow <a href="{{ . }}">this link</a>.</p>
+            {{ end }}
+        </main>
+    {{ partial "bottom" . }}
+    </body>
+</html>
