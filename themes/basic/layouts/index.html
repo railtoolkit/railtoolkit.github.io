@@ -7,7 +7,14 @@
 
     <p>{{- .Content -}}</p>
 
-    <!-- {{ printf "%#v" $.Site }} -->
+    <h1>Projects</h1>
+    <ul>
+    {{ range where .Site.RegularPages "Type" "projects" }}
+        <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
 
   </main>
   {{ partial "bottom" . }}

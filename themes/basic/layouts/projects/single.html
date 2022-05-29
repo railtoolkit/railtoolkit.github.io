@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">{{ partial "head" . }}
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+    {{ partial "head" . }}
     <body>
     {{ partial "top" . }}
         <main>
             <hr>
-
+            <!-- 
             <p>{{- .Content -}}</p>
 
             {{ with .Params.git.repository }}
                 <a href="{{ . }}" target="_blank">Git repository</a>
             {{ end }}
+            -->
 
             {{ if and (.Params.git.repository) (.Params.git.aboutfile) }}
                 {{ $url := urls.Parse .Params.git.repository }}
